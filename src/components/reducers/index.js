@@ -20,7 +20,6 @@ export const initialState = {
 export const appReducer = ( state = initialState, action ) => {
   switch ( action.type ) {
     case ADD:
-      console.log( action.payload );
       return {
         ...state,
         additionalPrice: ( state.additionalPrice + action.payload.price ),
